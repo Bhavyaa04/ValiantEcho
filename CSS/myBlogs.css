@@ -1,0 +1,202 @@
+.page-title {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  padding: 50px 0;
+  letter-spacing: 10px;
+  text-align: center;
+  /* width: 100%; */
+  /* border: 1px solid; */
+}
+
+.allBlogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainBlog {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  border: 1px solid;
+  flex-direction: row;
+}
+
+.mainBlog .image-box {
+  width: 700px;
+  height: 304px;
+  overflow: hidden;
+}
+
+.mainBlog .image-box img {
+  height: 304px;
+}
+
+.information {
+  width: 100%;
+  padding: 30px;
+}
+
+.information .time-date {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.information .blogTitle {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.information .desc {
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  overflow: hidden;
+  /* border: 1px solid; */
+  height: 93px;
+
+  transition: height 0.3s ease-in;
+}
+
+.information .desc .bold{
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.information .desc p{
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+.information .expand {
+  cursor: pointer;
+  background: var(--purple);
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  width: max-content;
+}
+
+.information .desc-expanded{
+  height: max-content;
+}
+
+.information .expand:hover:hover {
+  border-radius: 5px;
+  background: black;
+}
+
+
+@media only screen and (max-width: 1550px){
+
+  .mainBlog {
+    width: 1000px;
+  }
+  
+  .mainBlog .image-box {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .mainBlog .image-box img {
+    height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 460px){
+
+  .page-title {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    padding: 50px 0;
+    letter-spacing: 10px;
+  }
+
+  .mainBlog {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid;
+  }
+  
+  .mainBlog .image-box {
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .mainBlog .image-box img {
+    
+    height: 500px;
+  }
+  
+}
+
+@media only screen and (max-width: 459px){
+  
+  .page-title {
+    margin-top: 10px;
+    border-top: 1px solid ;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 0;
+    letter-spacing: 10px;
+  }
+
+  .mainBlog {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid;
+  }
+  
+  .mainBlog .image-box {
+    width: auto;
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .mainBlog .image-box img {
+    
+    width: 400px;
+  }
+
+  .desc{
+    font-size: 0.8em !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+}
+
+/*# sourceMappingURL=myBlogs.css.map */
